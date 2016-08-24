@@ -1,0 +1,62 @@
+/*
+  Daniel Orozco 13312
+  UVG
+  Sistemas y Tecnologias Web
+  2016
+*/
+
+$btn-letter-size: 40px;
+$left: 100px;
+$light-bk-color: white;
+$light-spacing: 20px;
+$proporcion: 0.7;
+$semaforo-color: black;
+$semaforo-size: 200px;
+$top: 50px;
+
+$light-size: $semaforo-size*$proporcion;
+
+#root{
+  margin-left: $left;
+  margin-top: $top;
+}
+
+.dispatcher{
+  font-size: $btn-letter-size;
+  width: $semaforo-size;
+}
+
+.traffic-light{
+  background: $semaforo-color;
+  margin-bottom: 10px;
+  padding: $semaforo-size*0.1;
+  width: $semaforo-size;
+}
+
+.traffic-light .light{
+  background: $light-bk-color;
+  border-radius: 100%;
+  height: $light-size;
+  margin: 0 auto $light-spacing auto;
+  width: $light-size;
+}
+
+.traffic-light .light.green{
+  background: #0f0;
+}
+
+.traffic-light .light.red{
+  background: red;
+}
+
+.traffic-light .light.yellow{
+  background: yellow;
+}
+
+.traffic-light .light.off{
+  opacity: 0.3;
+}
+
+.traffic-light .light:last-child{
+  margin-bottom: 0;
+}
