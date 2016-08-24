@@ -1,2 +1,2 @@
-# basic-webpack-setup
-Basic webpack setup to test ES6
+# redux-react-sass
+Semaforo con redux + react + sass
